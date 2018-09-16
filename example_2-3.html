@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/react.js"></script>
+        <script src="js/react-dom.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <div id="content2"></div>
+        <script type="text/javascript">
+            var h1 = React.createElement('h1', null, 'Hello world!');
+            var h2 = React.createElement('h2', null, 'Hello react!');
+
+            class HelloWorld extends React.Component {
+                render() {
+                    return React.createElement('div', null, h1, h1);
+                }
+            }
+
+            class HelloReact extends React.Component {
+                render() {
+                    return React.createElement('div', null, h2, h2);
+                }
+            }
+
+            ReactDOM.render(
+                React.createElement(HelloWorld, 
+                null),  // 컴포넌트 클래스 인스턴스를 인자로 전달
+                document.getElementById('content'));
+
+            ReactDOM.render(
+                React.createElement(
+                    'div', 
+                    null, 
+                    React.createElement(HelloReact),
+                    React.createElement(HelloReact),
+                    React.createElement(HelloReact)),  // 컴포넌트 클래스 인스턴스를 인자로 전달
+                document.getElementById('content2'));
+        </script>
+    </body>
+</html>

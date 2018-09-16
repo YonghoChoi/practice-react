@@ -1,0 +1,22 @@
+<!-- 
+    Babel로 빌드
+    npm install babel-cli // babel comand 사용을 위해 babel-cli 설치
+    npm install babel-preset-react // react -> js 변환 plugin 설치
+    babel --presets react "src" -- out-dir "build" // 변환 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/react.js"></script>
+        <script src="js/react-dom.js"></script>
+        <script src="build/example_3-2.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script type="text/javascript">
+            ReactDOM.render(
+                helloWorldReactElement,
+                document.getElementById('content'));
+        </script>
+    </body>
+</html>

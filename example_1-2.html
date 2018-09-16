@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/react.js"></script>
+        <script src="js/react-dom.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script type="text/javascript">
+            // React.createElement() 함수의 인자
+            //  elementName : HTML 태그명 또는 컴포넌트 클래스 객체
+            //  data : 속성이나 상위 컴포넌트에 받는 값
+            //  child : 자식 엘리먼트 또는 태그 내부에 작성하는 텍스트
+            var h1 = React.createElement('h1', null, 'Hello world!');
+
+            // 여기서 첫번째 인자로 넘긴 h1은 React의 h1 컴포넌트의 인스턴스
+            // 두번째 인자는 렌더링 대상
+            ReactDOM.render(h1, document.getElementById('content'));
+        </script>
+    </body>
+</html>
