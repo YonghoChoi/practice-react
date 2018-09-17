@@ -18,7 +18,7 @@ $ npm install babel-preset-react
   "name": "practice-react",
   "version": "1.0.0",
   "scripts": {
-    "build": "babel ./src -d ./build"
+    "build": "babel ./jsx -d ./build"
   },
   "babel": {
     "presets": [
