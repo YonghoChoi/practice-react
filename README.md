@@ -41,4 +41,4 @@ $ npm install babel-preset-react
 ```
 $ npm run build
 ```
-* 위 package.json 설정 기준으로 src 디렉토리 하위의 jsx 파일들이 컴파일 되어 build 디렉토리로 js 파일이 생성됨
+* 위 package.json 설정 기준으로 jsx 디렉토리 하위의 *.jsx 파일들이 컴파일 되어 build 디렉토리로 js 파일이 생성됨
